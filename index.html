@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>練習用のサイト</title>
+        <!--<link rel="stylesheet" href="Practice01.css">-->
+    </head>
+    <style>
+        h1{
+            position: relative;
+            display: inline-block;
+            padding: 0.25em 1em;
+            border-top: solid 2px black;
+            border-bottom: solid 2px black;
+        }
+        h1::before, h1::after{
+            content: "";
+            position: absolute;
+            top: -7px;
+            width: 2px;
+            height: calc(100% + 14px);
+            background-color: black;
+        }
+        h1::before{
+            left: 7px;
+        }
+        h1::after{
+            right: 7px;
+        }
+        #Noah{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(25deg, rgba(255,0,0,0.4), transparent), url(\ノア_banner.jpg);
+            background-size: cover;
+
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            text-shadow: 1px 1px 1px gray;
+            font-weight: bold;
+        }
+        #Mio{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(25deg, rgba(255, 241, 0, 0.4), transparent), url(\ミオ_banner.jpg);
+            background-size: cover;
+
+            text-align: center;
+            line-height: 200px;
+            color: white;
+            text-shadow: 1px 1px 1px gray;
+            font-weight: bold;
+        }
+    </style>
+    <body>
+        <h1>美しい見出しのデザイン</h1>
+        <p>見出しは記事の読みやすさを決める大事な要素の一つです</p>
+        <div id="Noah">Noah</div>
+        <div id="Mio">Mio</div>
+    </body>
+</html>
